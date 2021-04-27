@@ -12,13 +12,13 @@
     Fix all tests of this lesson. Use as much as possible from the <i>script</i> block, but do not change it.
 </div>
 
-<p data-test="block-1" class="falsche-farbe">
+<p data-test="block-1" class="box wrong-class">
     <!-- insert text here -->
 </p>
 
-<p data-test="block-2" style="font-size: 15px;">Sum: 4</p>
+<p data-test="block-2" class="box" style="font-size: 15px;">Sum: 4</p>
 
-<p data-test="block-3" title="Visible on hover">Title-Test</p>
+<p data-test="block-3" class="box" title="Visible on hover">Title-Test</p>
 
 <style>
     .colorful {

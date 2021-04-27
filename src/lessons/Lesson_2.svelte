@@ -18,15 +18,15 @@
     Fix all tests of this lesson. Use as much as possible from the <i>script</i> block, but do not change it.
 </div>
 
-<p>
+<p class="box">
     <button id="incBtn" class="large">Number</button>
 </p>
 
-<p>
+<p class="box">
     <button id="textBtn" class="large" on:click={changeButtonText}>{buttonText}</button>
 </p>
 
-<div id="hover-area" on:mousemove={(evt) => console.log(evt)}>
+<div id="hover-area" class="box" on:mousemove={(evt) => console.log(evt)}>
     Position {position.x} / {position.y}
 </div>
 
