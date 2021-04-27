@@ -1,0 +1,27 @@
+{
+    "name": "svelte-workshop",
+    "private": true,
+    "version": "0.0.0",
+    "scripts": {
+        "👇 about dev": "starts local vite server",
+        "dev": "vite",
+        "👇 about text": "starts cypress",
+        "test": "cypress open",
+        "👇 about workshop": "starts everything needed for the workshop",
+        "workshop": "concurrently \"npm:dev\" \"npm:test\""
+    },
+    "dependencies": {
+        "axios": "0.21.1",
+        "tinro": "0.6.1"
+    },
+    "devDependencies": {
+        "@sveltejs/vite-plugin-svelte": "1.0.0-next.7",
+        "concurrently": "6.0.2",
+        "cypress": "7.1.0",
+        "prettier": "2.2.1",
+        "svelte": "3.37.0",
+        "svelte-preprocess": "4.7.1",
+        "typescript": "4.2.4",
+        "vite": "2.1.5"
+    }
+}
