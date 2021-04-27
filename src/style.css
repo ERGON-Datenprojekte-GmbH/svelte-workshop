@@ -1,0 +1,14 @@
+body {
+  font-family: sans-serif;
+}
+
+.intro {
+  padding: 8px;
+  background-color: lightseagreen;
+}
+
+.box {
+  margin-top: 15px;
+  padding: 20px;
+  border: 1px solid black;
+}
