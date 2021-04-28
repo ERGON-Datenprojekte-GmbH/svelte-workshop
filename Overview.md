@@ -28,6 +28,7 @@
 
 # Lesson 7: Component Composition
   - scoped stylings
+  - multiple root elements
   - props
     - defaults
   - event proxy
