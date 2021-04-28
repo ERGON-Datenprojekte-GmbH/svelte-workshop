@@ -19,14 +19,14 @@
 </div>
 
 <p class="box">
-    <button id="incBtn" class="large">Number</button>
+    <button id="incBtn" class="large" on:click={increment}>{number}</button>
 </p>
 
 <p class="box">
-    <button id="textBtn" class="large" on:click={changeButtonText}>{buttonText}</button>
+    <button id="textBtn" class="large" on:click={() => changeButtonText('Hello')}>{buttonText}</button>
 </p>
 
-<div id="hover-area" class="box" on:mousemove={(evt) => console.log(evt)}>
+<div id="hover-area" class="box" on:mousemove={(evt) => (position = { x: evt.clientX, y: evt.clientY })}>
     Position {position.x} / {position.y}
 </div>
 

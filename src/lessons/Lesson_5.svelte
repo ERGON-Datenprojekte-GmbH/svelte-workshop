@@ -13,21 +13,23 @@
 
     // -------- change line --------
 
-    let sum = a + b;
+    $: sum = a + b;
 
     function addItem() {
-        items.push({ id: items.length + 1, text: 'NEW' });
+        items = [...items, { id: items.length + 1, text: 'NEW' }];
     }
 
     function updateItem(item) {
         item.text = 'CHANGED';
+        items = items;
     }
 </script>
 
 <h1>Lesson 5</h1>
 
 <div class="intro">
-    Fix all tests of this lesson. Use as much as possible from the <i>script</i> block and change it only below the change line.
+    Fix all tests of this lesson. Use as much as possible from the <i>script</i> block and change it only below the change
+    line.
 </div>
 
 <div class="box" id="items">
@@ -38,7 +40,7 @@
             <span>
                 {item.text}
             </span>
-            <button>Change</button>
+            <button on:click={() => updateItem(item)}>Change</button>
         </p>
     {/each}
 </div>
@@ -48,7 +50,7 @@
 
     <p>a: {a}</p>
     <p>b: {b}</p>
-    <p id="sum">Summe: {sum}</p>
+    <p id="sum">Sum: {sum}</p>
 </div>
 
 <style>

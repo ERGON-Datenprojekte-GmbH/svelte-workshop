@@ -17,4 +17,4 @@
 
 <button on:click={changeText} style="margin-top:20px">change text</button>
 
-<Box />
+<Box text={myText} on:click={changeText} />

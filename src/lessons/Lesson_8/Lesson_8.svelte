@@ -19,7 +19,7 @@
 </div>
 
 <div class="box">
-    <button id="change">Change</button>
+    <button id="change" on:click={() => info.set('Hello')}>Change</button>
 
     <div id="infoText">
         {infoText}

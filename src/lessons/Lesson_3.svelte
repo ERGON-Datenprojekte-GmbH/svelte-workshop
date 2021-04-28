@@ -13,23 +13,23 @@
 
 <div class="box">
     <div id="text">{text}</div>
-    <input id="textInput" type="text" />
+    <input id="textInput" type="text" bind:value={text} />
 </div>
 
 <div class="box">
-    <input id="number1" type="number" min="0" max="10" />
-    <input id="number2" type="range" min="0" max="10" />
+    <input id="number1" type="number" min="0" max="10" bind:value={number} />
+    <input id="number2" type="range" min="0" max="10" bind:value={number} />
 </div>
 
 <div class="box">
     <div id="checkedText">Checked: {isChecked}</div>
-    <input id="checkbox" type="checkbox" />
+    <input id="checkbox" type="checkbox" bind:checked={isChecked} />
 </div>
 
 <div class="box">
     <div id="selectedText">Selected: {selected}</div>
 
-    <select id="select">
+    <select id="select" bind:value={selected}>
         <option value="">-</option>
         <option value="1">One</option>
         <option value="2">Two</option>

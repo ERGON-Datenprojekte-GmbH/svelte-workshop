@@ -12,15 +12,17 @@
     Fix all tests of this lesson. Use as much as possible from the <i>script</i> block, but do not change it.
 </div>
 
-<p data-test="block-1" class="box wrong-class">
-    <!-- insert text here -->
+<p data-test="block-1" class="box {myClass}">
+    {text}
 </p>
 
-<p data-test="block-2" class="box" style="font-size: 15px;">Sum: 4</p>
+<p data-test="block-2" class="box" style="font-size: {fontSize}px;">Sum: {number1 + number2}</p>
 
-<p data-test="block-3" class="box" title="Visible on hover">Title-Test</p>
+<p data-test="block-3" class="box" title={text}>Title-Test</p>
 
-<p data-test="block-4"></p>
+<p data-test="block-4">
+    {text.toUpperCase()}
+</p>
 
 <style>
     .colorful {

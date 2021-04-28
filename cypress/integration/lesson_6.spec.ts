@@ -14,7 +14,7 @@ context('Lesson 6', () => {
         cy.get('body .flyout').should('be.visible');
     });
 
-    it('the height of the "intro" divs gets set to the variable "height"', () => {
+    it('the height of the "intro" div gets set to the variable "height"', () => {
         cy.get('.intro')
             .first()
             .then((el) => {

@@ -16,13 +16,18 @@
 
 <div id="show" class="box">
     <button id="toggle" on:click={() => (show = !show)}>Toggle</button>
-    <div>Monkey</div>
-    <div>Banana</div>
+    {#if show}
+        <div>Monkey</div>
+    {:else}
+        <div>Banana</div>
+    {/if}
 </div>
 
-<div id="items" class="box">
+<div id="items" class="box" class:colorful={items.length > 3}>
     <button id="addItem" on:click={addItem}>Add Item</button>
-    <p>One</p>
+    {#each items as item}
+        <p>{item}</p>
+    {/each}
 </div>
 
 <style>
