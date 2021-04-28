@@ -23,4 +23,7 @@ context('Lesson 1', () => {
         cy.get('[data-test="block-3"]').should('have.attr', 'title', 'Hello');
     });
 
+    it('show variable "text" in "block-4" in ALL CAPS', () => {
+        cy.get('[data-test="block-4"]').should('contain.text', 'HELLO');
+    });
 });

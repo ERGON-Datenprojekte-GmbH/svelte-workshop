@@ -20,6 +20,8 @@
 
 <p data-test="block-3" class="box" title="Visible on hover">Title-Test</p>
 
+<p data-test="block-4"></p>
+
 <style>
     .colorful {
         background-color: #451212;

@@ -3,7 +3,7 @@ context('Lesson 5', () => {
         cy.visit('/#/5');
     });
 
-    it('click on "Add" extends list with an item with the text "NEW"', () => {
+    it('click on "Add" extends list "items" with an item with the text "NEW"', () => {
         cy.contains('Add').click();
         cy.get('#items p').should('have.length', 3);
         cy.get('#items p').contains('NEW').should('be.visible');
